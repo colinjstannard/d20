@@ -1,0 +1,39 @@
+{
+  "name": "roguelette",
+  "version": "0.1.0",
+  "main": "main.js",
+  "build": {
+    "appId": "roguelette",
+    "category": "wheel",
+    "dmg": {
+      "contents": [
+        {
+          "x": 110,
+          "y": 150
+        },
+        {
+          "x": 240,
+          "y": 150,
+          "type": "link",
+          "path": "/Applications"
+        }
+      ]
+    },
+    "linux": {
+      "target": [
+        "AppImage",
+        "deb"
+      ]
+    },
+    "win": {
+      "target": "NSIS",
+      "icon": "build/icon.ico"
+    }
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "electron": "^1.7.10",
+    "electron-builder": "latest",
+    "electron-packager": "^10.1.0"
+  }
+}

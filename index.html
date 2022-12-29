@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <title>Roguelette</title>
+  <link rel='icon' href='favicon.ico' type='image/x-icon' />
+  <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/smoothness/jquery-ui.css">
+  <script src="//code.jquery.com/jquery-1.12.4.js"></script>
+  <script src="//code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
+
+  <!-- p5 -->
+
+  <script src="libraries/p5.js" type="text/javascript"></script>
+  <script src="libraries/p5.dom.js" type="text/javascript"></script>
+  <script src="libraries/p5.sound.js" type="text/javascript"></script>
+
+  <!-- bootstrap -->
+
+  <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zug+QiDoJOrZ5t4lssLdxGhVrurbmBWopoEl+M6BdEfwnCJZtKxi1KgxUyJq13dy" crossorigin="anonymous">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4" crossorigin="anonymous"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.bundle.min.js" integrity="sha384-VspmFJ2uqRrKr3en+IG0cIq1Cl/v/PHneDw6SQZYgrcr8ZZmZoQ3zhuGfMnSR/F2" crossorigin="anonymous"></script>
+
+  <!-- font-awesome -->
+
+  <script src="https://use.fontawesome.com/76687170dd.js"></script>
+
+  <!-- google font -->
+
+  <link href="https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz" rel="stylesheet">
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+  <script src="sketch.js" type="text/javascript"></script>
+  <script>
+
+    function showHide() {
+      var x = document.getElementById("input");
+      if (x.style.display === "block") {
+        x.style.display = "none";
+      } else {
+        x.style.display = "block";
+      }
+    }
+</script>
+<!--<script>
+$( document ).click(addgames() {
+  $( "#input" ).toggle( "slide" );
+});
+</script>-->
+
+</head>
+
+<body>
+  <nav class="navbar navbar-default navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="index.html">
+        <img src="logo.gif" alt="Rougelette" id="logoimage" height="100px" width="auto">
+      </a>
+    </div>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a onclick="showHide()"><i class="fa fa-pencil-square fa-3x" aria-hidden="true"></i></a></li>
+    </ul>
+  </div>
+</nav>
+  <div class="container-fluid">
+    <div id="wrapper">
+          <div id="canvas"></div>
+          <div id="input">
+            <div id="header">
+            <h1>What would you like to play? Idiot</h1>
+            </div>
+            <form id="gameInput">
+              <div class="space"></div>
+              <input type="text" name="game1" placeholder="Rouge Legacy">
+              <div class="space"></div>
+              <input type="text" name="game2" placeholder="Spelunkey">
+              <div class="space"></div>
+              <input type="text" name="game3" placeholder="Gungeon">
+              <div class="space"></div>
+              <input type="text" name="game4" placeholder="FTL">
+              <div class="space"></div>
+              <input type="text" name="game5" placeholder="Ziggurat">
+              <div class="space"></div>
+              <input type="text" name="game6">
+              <div class="space"></div>
+              <input type="text" name="game7">
+              <div class="space"></div>
+              <input type="text" name="game8">
+              <div class="space"></div>
+              <input type="text" name="game9">
+              <div class="space"></div>
+              <input type="text" name="game10">
+              <div class="space"></div>
+              <input type="text" name="game11">
+              <div class="space"></div>
+              <input type="text" name="game12">
+              <div class="space"></div>
+              <input type="text" name="game13">
+              <div class="space"></div>
+              <input type="text" name="game14">
+              <div class="space"></div>
+              <input type="text" name="game15">
+              <div class="space"></div>
+              <input type="text" name="game16" >
+              <div class="space"></div>
+              <input type="text" name="game17">
+              <div class="space"></div>
+              <input type="text" name="game18">
+              <div class="space"></div>
+              <input type="text" name="game19">
+              <div class="space"></div>
+              <input type="text" name="game20">
+              <div class="space"></div>
+            </form>
+            <button onclick="showHide()" type="button" id="done" class="btn">Done</button>
+          </div>
+        </div>
+      </div>
+  <div class="alert" id="alt">
+  <span class="X" onclick="this.parentElement.style.display='none';">&times;</span>
+  <strong>Welcome!</strong> Press space or click and drag the wheel to spin.
+</div>
+</body>
+
+</html>

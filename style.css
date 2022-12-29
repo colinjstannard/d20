@@ -1,0 +1,126 @@
+
+body {
+  background-color: #111111;
+  position:relative;
+  overflow: hidden;
+  overflow-x: hidden;
+  margin: 0 auto;
+}
+
+input[type="text"], textarea {
+  color: white;
+  background-color : #111111;
+  border: 2px solid #111111;
+  border-radius: 10px;
+  text-align: center;
+}
+
+textarea:focus, input:focus {
+	border: 2px solid #822831;
+}
+
+#input{
+  display: none;
+  position:fixed;
+  bottom: 0px;
+  right: 0px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  overflow: hidden;
+  height: 100%;
+  width: 300px;
+  padding-top: 1%;
+  background-color: white;
+  border-radius: 25px 0px 0px 25px;
+
+}
+#gameInput {
+  position: relative;
+  padding-left: 28%;
+  width: 300px;
+  -webkit-transition-duration: 0.3s;
+  -moz-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+
+}
+
+/* Ben's Code */
+
+#canvas {
+  /*position: fixed;
+  vertical-align: top;
+  top: 5%;
+  bottom: 10%;
+  left: 25%;
+  right: 25%;
+  display: block;
+  width: 900px;
+  height: 900px;
+  margin: 0px;*/
+}
+
+.fa-pencil-square {
+  padding-top: 15px;
+  color: white;
+  height: 100px;
+  width: auto;
+  cursor: pointer;
+  transition: 0.3s;
+
+
+}
+.fa-pencil-square:hover{
+  cursor: pointer;
+  color: grey;
+}
+
+
+h1 {
+  font-size: 20px;
+  color: #111111;
+  text-align: center;
+  font-family: 'Yanone Kaffeesatz', sans-serif;
+}
+
+.space {
+  height: 10px;
+  width: auto;
+}
+
+.alert {
+    padding: 20px;
+    background-color: #822831;
+    color: white;
+    bottom: 2%;
+    position: fixed;
+    width: 20%;
+    left: 2%;
+}
+
+.X {
+    margin-left: 15px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.closebtn:hover {
+    color: black;
+}
+
+#header {
+  text-align: center;
+}
+#done {
+  align-content: center;
+  background-color: #822831;
+  color:
+}
